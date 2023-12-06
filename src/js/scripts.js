@@ -13,7 +13,7 @@ function initializeAnimation() {
 
 function updateAnimation(scrollPercentage) {
   if (scrollPercentage >= 0 && scrollPercentage <= 100) {
-    // The actual animation
+
     rollercoaster.goToAndStop(scrollPercentage * (rollercoaster.totalFrames / 100), true);
   }
 }
@@ -29,7 +29,6 @@ function onScroll() {
     initializeAnimation();
     animationStarted = true;
 
-    // Add the 'appear' class to make the rollercoaster appear
     document.querySelector(".rollercoaster").classList.add("appear");
   }
 
@@ -46,6 +45,5 @@ function onScroll() {
     updateAnimation(scrollPercentage);
   }
 }
-
 window.addEventListener("scroll", onScroll);
 
