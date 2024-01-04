@@ -56,13 +56,17 @@ body {
 .title2 h1 {
 	color: #D04;
 	text-align: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 9vh;
 	font-weight: 700;
 	line-height: 180%;
-	animation: text 2s 1;
+
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 	text-shadow: 0.1vw 0.1vw 0.2vw #D04;
 }
+
 
 
 @media (max-width: 768px) {
@@ -174,17 +178,17 @@ body {
 }
 
 .sidebar {
-    position: fixed;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    z-index: 10000;
+	position: fixed;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	z-index: 10000;
 }
 
 @media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
+	.sidebar {
+		display: none;
+	}
 }
 
 
